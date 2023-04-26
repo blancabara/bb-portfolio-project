@@ -3,10 +3,43 @@ body {
     padding: 0%;
     background-color: #FDF7F0;
 }
+
+p {
+    font-family: "garlic-salt";
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-family: "fields";
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-style: normal;
+}
+
+
+/* home page styling */
+
+.bb {
+    display: flex;
+    justify-content: center;
+}
+
+.bb h1 {
+    font-size: 3rem;
+}
+
+.greetings .img {
+    background-image: url(images/placeholder.png);
+    height: 40vh;
+    width: 40vh;
+}
+
 /* nav styling section */
 nav {
     opacity: 0.9;
 }
+
+
 
 .navbar-container {
     display: flex;
