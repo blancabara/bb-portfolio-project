@@ -2,36 +2,61 @@ body {
     margin: 0%;
     padding: 0%;
     background-color: #FDF7F0;
+    overflow-x: hidden;
 }
 
 p {
     font-family: "garlic-salt";
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+    color: #7B7070;
 }
 
 h1 {
     font-family: "fields";
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: normal;
+    color: #7B7070;
 }
 
+.decor {
+    width: 450px;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    height: 60vh;
+    width: 60vh;
+}
 
 /* home page styling */
 
 .bb {
-    display: flex;
-    justify-content: center;
+    margin-top: 8%;
 }
 
 .bb h1 {
-    font-size: 3rem;
+    font-size: 5rem;
+    margin: 0%;
+}
+
+.bb p {
+    font-style: italic;
+    font-size: 2.5rem;
+    margin: 0%;
 }
 
 .greetings .img {
-    background-image: url(images/placeholder.png);
-    height: 40vh;
-    width: 40vh;
+    background-image: url(images/me.jpg);
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
+    margin: 2%;
+    background-size: cover;
+    background-position: center;
 }
 
 /* nav styling section */
@@ -39,12 +64,9 @@ nav {
     opacity: 0.9;
 }
 
-
-
 .navbar-container {
     display: flex;
     justify-content: right;
-    position: relative;
     height: 64px;
 }
 
@@ -75,7 +97,7 @@ nav {
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #333;
+    background: #7B7070;
 }
 
 .navbar-container .hamburger .line1 {
@@ -101,9 +123,10 @@ nav .menu-items {
     display: flex;
     flex-direction: column;
     margin-right: -40px;
-    padding-right: 50px;
+    padding-right: 70px;
     transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
+    box-shadow: -5px 0px 10px 0px #d0d0d0;
+    margin-top: 0;
 }
 
 nav .menu-items li {
