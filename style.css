@@ -1,5 +1,7 @@
 body {
-    margin: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
     padding: 0%;
     background-color: #FDF7F0;
     overflow-x: hidden;
@@ -14,13 +16,9 @@ p {
 h1 {
     font-family: "fields";
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: normal;
     color: #7B7070;
-}
-
-.decor {
-    width: 450px;
 }
 
 header {
@@ -28,14 +26,15 @@ header {
 }
 
 .logo {
-    height: 60vh;
-    width: 60vh;
+    max-height: 350px;
+    max-width: 440px;
 }
 
 /* home page styling */
 
 .bb {
     margin-top: 8%;
+    text-align: center;
 }
 
 .bb h1 {
@@ -43,20 +42,299 @@ header {
     margin: 0%;
 }
 
-.bb p {
-    font-style: italic;
-    font-size: 2.5rem;
-    margin: 0%;
+.greetings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B8BF80;
+    margin-top: 5%;
 }
 
 .greetings .img {
     background-image: url(images/me.jpg);
-    height: 50vh;
-    width: 50vh;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     margin: 2%;
     background-size: cover;
     background-position: center;
+}
+
+.greetings p {
+    width: 130vh;
+    height: 20vh;
+}
+
+.about-resume {
+    display: flex;
+    background: #E7C7D7;
+    height: fit-content;
+}
+
+.home-aboutme,
+.home-resume {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    height: 100%;
+}
+
+.home-aboutme .img,
+.home-resume .img {
+    background-image: url(images/placeholder.png);
+    width: 90%;
+    height: 450px;
+    margin: 2%;
+}
+
+.home-resume .img {
+    background-image: url(images/placeholder.png);
+}
+
+.home-aboutme p,
+.home-resume p {
+    width: 90%;
+}
+
+.home-resume p {
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
+}
+
+/* about me page styling */
+.about {
+    margin-top: 8%;
+}
+
+.about h1 {
+    font-size: 5rem;
+    margin: 0%;
+    text-align: center;
+}
+
+.achievements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B8BF80;
+    margin-top: 5%;
+    flex-wrap: wrap
+}
+
+.achievements .img {
+    background-image: url(images/placeholder.png);
+    width: 90%;
+    height: 900px;
+    margin: 2%;
+}
+
+.achievements p {
+    width: 90%;
+    padding-bottom: 2%;
+}
+
+.hobbies-plan {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.hobbies,
+.plan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    height: 100%;
+    background: #E7C7D7;
+}
+
+.plan {
+    padding-bottom: 4%;
+}
+
+.hobbies .img,
+.plan .img {
+    background-image: url(images/placeholder.png);
+    width: 90%;
+    height: 450px;
+    margin: 2%;
+}
+
+.plan .img {
+    background-image: url(images/placeholder.png);
+}
+
+.hobbies p,
+.plan p {
+    width: 90%;
+}
+
+/* resume page styling */
+
+/* portfolio page styling */
+.portfolio {
+    margin-top: 8%;
+}
+
+.portfolio h1 {
+    font-size: 5rem;
+    margin: 0%;
+    text-align: center;
+}
+
+.p-programming {
+    display: flex;
+    background: #878C5E;
+    margin-top: 5%;
+    flex-wrap: wrap
+}
+
+.p-programming .img {
+    background-image: url(images/placeholder.png);
+    width: 40%;
+    height: 450px;
+    margin: 2%;
+}
+
+.p-programming section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 2%;
+}
+
+.p-programming section p {
+    background: #B8BF80;
+    padding: 6%;
+}
+
+.p-writing {
+    display: flex;
+    background: #878C5E;
+    margin-top: 5%;
+    flex-wrap: wrap
+}
+
+.p-writing  .img {
+    background-image: url(images/placeholder.png);
+    width: 40%;
+    height: 450px;
+    margin: 2%;
+}
+
+.p-writing  section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 2%;
+}
+
+.p-writing  section p {
+    background: #B8BF80;
+    padding: 6%;
+}
+
+.p-pwork {
+    display: flex;
+    background: #878C5E;
+    margin-top: 5%;
+    flex-wrap: wrap
+}
+
+.p-pwork .img {
+    background-image: url(images/placeholder.png);
+    width: 40%;
+    height: 450px;
+    margin: 2%;
+}
+
+.p-pwork section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 2%;
+}
+
+.p-pwork section p {
+    background: #B8BF80;
+    padding: 6%;
+}
+
+/* programming page styling */
+.programming {
+    margin-top: 8%;
+}
+
+.programming h1 {
+    font-size: 5rem;
+    margin: 0%;
+    text-align: center;
+}
+
+.BattleWitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B8BF80;
+    margin-top: 5%;
+    flex-wrap: wrap
+}
+
+.BattleWitch .img {
+    background-image: url(images/placeholder.png);
+    width: 90%;
+    height: 900px;
+    margin: 2%;
+}
+
+.BattleWitch p {
+    width: 90%;
+    padding-bottom: 2%;
+}
+
+.SWC-Budget {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.SWC,
+.Budget {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    height: 100%;
+    background: #E7C7D7;
+}
+
+.SWC {
+    padding-bottom: 2%;
+}
+
+.SWC .img,
+.Budget .img {
+    background-image: url(images/placeholder.png);
+    width: 90%;
+    height: 450px;
+    margin: 2%;
+}
+
+.Budget .img {
+    background-image: url(images/placeholder.png);
+}
+
+.SWC p,
+.Budget p {
+    width: 90%;
 }
 
 /* nav styling section */
@@ -82,8 +360,8 @@ nav {
 }
 
 .navbar-container .hamburger {
-    height: 23px;
-    width: 35px;
+    height: 30px;
+    width: 45px;
     position: absolute;
     top: 30px;
     right: 120px;
@@ -94,7 +372,7 @@ nav {
 }
 
 .navbar-container .hamburger .line {
-    height: 4px;
+    height: 6px;
     width: 100%;
     border-radius: 10px;
     background: #7B7070;
@@ -133,7 +411,7 @@ nav .menu-items li {
     list-style: none;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
