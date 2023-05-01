@@ -158,14 +158,16 @@ header {
 
 .hobbies .img,
 .plan .img {
-    background-image: url(images/placeholder.png);
+    background-image: url(images/pixel-drawing.png);
+    background-size: cover;
+    background-position: center;
     width: 90%;
     height: 450px;
     margin: 2%;
 }
 
 .plan .img {
-    background-image: url(images/placeholder.png);
+    background-image: url(images/east-bay.jpg);
 }
 
 .hobbies p,
@@ -174,6 +176,20 @@ header {
 }
 
 /* resume page styling */
+.Resume {
+    margin-top: 8%;
+}
+
+.Resume h1 {
+    font-size: 5rem;
+    margin: 0%;
+    text-align: center;
+}
+
+.resume {
+    background: #B8BF80;
+    margin-top: 5%;
+}
 
 /* portfolio page styling */
 .portfolio {
@@ -288,7 +304,9 @@ header {
 }
 
 .BattleWitch .img {
-    background-image: url(images/placeholder.png);
+    background-image: url(images/battlewitch.PNG);
+    background-size: cover;
+    background-position: center;
     width: 90%;
     height: 900px;
     margin: 2%;
@@ -322,19 +340,131 @@ header {
 
 .SWC .img,
 .Budget .img {
-    background-image: url(images/placeholder.png);
+    background-image: url(images/swc.PNG);
+    background-size: cover;
+    background-position: center;
     width: 90%;
     height: 450px;
     margin: 2%;
 }
 
 .Budget .img {
-    background-image: url(images/placeholder.png);
+    background-image: url(images/budget.PNG);
 }
 
 .SWC p,
 .Budget p {
     width: 90%;
+}
+
+.Energy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B8BF80;
+    margin-top: 5%;
+    flex-wrap: wrap
+}
+
+.Energy .img {
+    background-image: url(images/energy.PNG);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 900px;
+    margin: 2%;
+}
+
+.Energy p {
+    width: 90%;
+    padding-bottom: 2%;
+}
+
+/* writing page styling */
+.writing {
+    margin-top: 8%;
+}
+
+.writing h1 {
+    font-size: 5rem;
+    margin: 0%;
+    text-align: center;
+}
+
+.CCE-TMS {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.CCE,
+.TMS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    height: 100%;
+    background: #E7C7D7;
+}
+
+.CCE .img,
+.TMS .img {
+    background-image: url(images/placeholder.png);
+    width: 90%;
+    height: 450px;
+    margin: 2%;
+}
+
+.TMS .img {
+    background-image: url(images/placeholder.png);
+}
+
+.CCE p,
+.TMS p {
+    width: 90%;
+}
+
+/* personal work page styling */
+.personal-work {
+    margin-top: 8%;
+}
+
+.personal-work h1 {
+    font-size: 5rem;
+    margin: 0%;
+    text-align: center;
+}
+
+.ODW {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B8BF80;
+    margin-top: 5%;
+    flex-wrap: wrap
+}
+
+.ODW .video {
+    width: 90%;
+    height: 900px;
+    margin: 2%;
+}
+
+.ODW p {
+    width: 90%;
+    padding-bottom: 2%;
+}
+
+/* contact page styling */
+.contact {
+    margin-top: 8%;
+}
+
+.contact h1 {
+    font-size: 5rem;
+    margin: 0%;
+    text-align: center;
 }
 
 /* nav styling section */
