@@ -11,6 +11,7 @@ p {
     font-family: "garlic-salt";
     font-size: 1.8rem;
     color: #7B7070;
+    line-height: 160%;
 }
 
 h1 {
@@ -25,9 +26,62 @@ header {
     display: flex;
 }
 
+a {
+    text-decoration: none;
+    color: #7B7070;
+}
+
+a:after {
+    text-decoration: none;
+    color: #7B7070;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .logo {
     max-height: 350px;
     max-width: 440px;
+}
+
+.button {
+    position: absolute;
+    padding: 1%;
+    background-color: #FDF7F0;
+    color: #7B7070;
+    font-size: 1.5rem;
+    transform-origin: 0 0;
+    will-change: transform, opacity;
+    transform: scaleY(0) translateZ(0);
+    transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.button-label {
+    transform: translateY(-15px);
+    transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,opacity 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+    display: block;
+    opacity: 0;
+}
+
+.BattleWitch .img:hover .button,
+.SWC .img:hover .button,
+.Budget .img:hover .button,
+.Energy .img:hover .button,
+.CCE .img:hover .button,
+.TMS .img:hover .button {
+    transform: scaleY(1) translateZ(0);
+    transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1)
+}
+
+.BattleWitch .img:hover .button-label,
+.SWC .img:hover .button-label,
+.Budget .img:hover .button-label,
+.Energy .img:hover .button-label,
+.CCE .img:hover .button-label,
+.TMS .img:hover .button-label {
+    transform: translateY(0);
+    opacity: 1
 }
 
 /* home page styling */
@@ -204,42 +258,31 @@ header {
 
 .p-programming {
     display: flex;
-    background: #878C5E;
+    background: #B8BF80;
     margin-top: 5%;
     flex-wrap: wrap
-}
-
-.p-programming .img {
-    background-image: url(images/placeholder.png);
-    width: 40%;
-    height: 450px;
-    margin: 2%;
 }
 
 .p-programming section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 50%;
+    width: 40%;
     margin: 2%;
-}
-
-.p-programming section p {
-    background: #B8BF80;
-    padding: 6%;
 }
 
 .p-writing {
     display: flex;
-    background: #878C5E;
+    background: #E7C7D7;
     margin-top: 5%;
     flex-wrap: wrap
 }
 
 .p-writing  .img {
-    background-image: url(images/placeholder.png);
-    width: 40%;
-    height: 450px;
+    background-image: url(images/cce.PNG);
+    background-size: cover;
+    width: 50%;
+    height: 460px;
     margin: 2%;
 }
 
@@ -247,26 +290,27 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 50%;
+    width: 40%;
     margin: 2%;
 }
 
-.p-writing  section p {
-    background: #B8BF80;
-    padding: 6%;
+.p-writing section p {
+    padding-left: 3%;
 }
 
 .p-pwork {
     display: flex;
-    background: #878C5E;
+    background: #B8BF80;
     margin-top: 5%;
     flex-wrap: wrap
 }
 
 .p-pwork .img {
-    background-image: url(images/placeholder.png);
-    width: 40%;
-    height: 450px;
+    background-image: url(images/odw.PNG);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 460px;
     margin: 2%;
 }
 
@@ -274,14 +318,61 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 50%;
+    width: 40%;
     margin: 2%;
 }
 
-.p-pwork section p {
-    background: #B8BF80;
-    padding: 6%;
+.carousel {
+    position: relative;
+    width: 50%;
+    height: 45px;
 }
+
+.carousel .change_outer {
+    position: absolute;
+    margin: 2%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel .change_outer .change_inner {
+    position: relative;
+    -webkit-animation: rotate 8s ease-in-out infinite;
+    animation: rotate 8s ease-in-out infinite;
+}
+
+.carousel .change_outer .element {
+    display: block;
+}
+
+@-webkit-keyframes rotate {
+
+    0%,
+    20% {
+        transform: translateY(0);
+    }
+
+    25%,
+    45% {
+        transform: translateY(-400px);
+    }
+
+    50%,
+    70% {
+        transform: translateY(-800px);
+    }
+
+    75%,
+    95% {
+        transform: translateY(-1200px);
+    }
+
+    100% {
+        transform: translateY(-1600px);
+    }
+}
+
+
 
 /* programming page styling */
 .programming {
@@ -335,7 +426,7 @@ header {
 }
 
 .SWC {
-    padding-bottom: 2%;
+    padding-bottom: 2.5%;
 }
 
 .SWC .img,
@@ -395,6 +486,7 @@ header {
     display: flex;
     height: fit-content;
     justify-content: space-between;
+    margin-top: 5%;
 }
 
 .CCE,
@@ -405,19 +497,19 @@ header {
     align-items: center;
     width: 49%;
     height: 100%;
-    background: #E7C7D7;
+    background: #B8BF80;
 }
 
 .CCE .img,
 .TMS .img {
-    background-image: url(images/placeholder.png);
+    background-image: url(images/cce.PNG);
     width: 90%;
     height: 450px;
     margin: 2%;
 }
 
 .TMS .img {
-    background-image: url(images/placeholder.png);
+    background-image: url(images/tms.PNG);
 }
 
 .CCE p,
