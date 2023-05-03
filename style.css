@@ -49,6 +49,7 @@ a:hover {
     position: absolute;
     padding: 1%;
     background-color: #FDF7F0;
+    opacity: 95%;
     color: #7B7070;
     font-size: 1.5rem;
     transform-origin: 0 0;
@@ -69,7 +70,9 @@ a:hover {
 .Budget .img:hover .button,
 .Energy .img:hover .button,
 .CCE .img:hover .button,
-.TMS .img:hover .button {
+.TMS .img:hover .button,
+.p-writing .img:hover .button,
+.p-pwork .img:hover .button {
     transform: scaleY(1) translateZ(0);
     transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1)
 }
@@ -79,7 +82,9 @@ a:hover {
 .Budget .img:hover .button-label,
 .Energy .img:hover .button-label,
 .CCE .img:hover .button-label,
-.TMS .img:hover .button-label {
+.TMS .img:hover .button-label,
+.p-writing .img:hover .button-label,
+.p-pwork .img:hover .button-label {
     transform: translateY(0);
     opacity: 1
 }
@@ -207,7 +212,7 @@ a:hover {
 }
 
 .plan {
-    padding-bottom: 4%;
+    padding-bottom: 5%;
 }
 
 .hobbies .img,
@@ -243,6 +248,40 @@ a:hover {
 .resume {
     background: #B8BF80;
     margin-top: 5%;
+}
+
+.resume h1 {
+    padding: 2%;
+    text-align: center;
+}
+
+.r-content {
+    padding: 2%;
+    margin-left: 5%;
+    color: #7B7070;
+    font-size: 1.2rem;
+}
+
+.r-content h3 {
+    text-indent: 2%;
+}
+
+.r-content h3:nth-child(3) {
+    font-style: italic;
+}
+
+.r-content h4 {
+    text-indent: 5%;
+    font-style: italic;
+}
+
+.r-content ul {
+    text-indent: 1%;
+}
+
+li {
+    list-style: square;
+    margin-left: 4%;
 }
 
 /* portfolio page styling */
@@ -324,7 +363,7 @@ a:hover {
 
 .carousel {
     position: relative;
-    width: 50%;
+    width: 55%;
     height: 45px;
 }
 
@@ -354,25 +393,23 @@ a:hover {
 
     25%,
     45% {
-        transform: translateY(-400px);
+        transform: translateY(-480px);
     }
 
     50%,
     70% {
-        transform: translateY(-800px);
+        transform: translateY(-960px);
     }
 
     75%,
     95% {
-        transform: translateY(-1200px);
+        transform: translateY(-1440px);
     }
 
     100% {
-        transform: translateY(-1600px);
+        transform: translateY(-1920px);
     }
 }
-
-
 
 /* programming page styling */
 .programming {
