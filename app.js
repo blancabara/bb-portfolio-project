@@ -1,3 +1,4 @@
+// navigation toggle
 const app = (() => {
 	let body;
 	let menu;
@@ -24,3 +25,6 @@ const app = (() => {
 	
 	init();
 })();
+
+
+//image carousel

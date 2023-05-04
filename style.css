@@ -266,10 +266,6 @@ a:hover {
     text-indent: 2%;
 }
 
-.r-content h3:nth-child(3) {
-    font-style: italic;
-}
-
 .r-content h4 {
     text-indent: 5%;
     font-style: italic;
@@ -282,6 +278,29 @@ a:hover {
 li {
     list-style: square;
     margin-left: 4%;
+}
+
+.lor {
+    background: #E7C7D7;
+}
+
+.lor h1 {
+    padding: 2%;
+    text-align: center;
+}
+
+.lor-content {
+    padding: 2% 6%;
+}
+
+.download {
+    background: #B8BF80;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+.download h1 {
+    text-align: center;
 }
 
 /* portfolio page styling */
@@ -361,55 +380,9 @@ li {
     margin: 2%;
 }
 
-.carousel {
-    position: relative;
-    width: 55%;
-    height: 45px;
-}
+/* image carousel */
 
-.carousel .change_outer {
-    position: absolute;
-    margin: 2%;
-    height: 400px;
-    overflow: hidden;
-}
 
-.carousel .change_outer .change_inner {
-    position: relative;
-    -webkit-animation: rotate 8s ease-in-out infinite;
-    animation: rotate 8s ease-in-out infinite;
-}
-
-.carousel .change_outer .element {
-    display: block;
-}
-
-@-webkit-keyframes rotate {
-
-    0%,
-    20% {
-        transform: translateY(0);
-    }
-
-    25%,
-    45% {
-        transform: translateY(-480px);
-    }
-
-    50%,
-    70% {
-        transform: translateY(-960px);
-    }
-
-    75%,
-    95% {
-        transform: translateY(-1440px);
-    }
-
-    100% {
-        transform: translateY(-1920px);
-    }
-}
 
 /* programming page styling */
 .programming {
