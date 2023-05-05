@@ -49,47 +49,82 @@
         
         <section class="about-resume">
             <section class="home-aboutme">
-                <h1>About Me</h1>
-                <div class="img"></div>
+                <h1><a href="aboutme.html">About Me</a></h1>
+                <div class="img">
+                    <span class="button">
+                        <span class="button-label"><a href="aboutme.html">View More</a></span>
+                    </span>
+                </div>
                 <p>It is thrilling for me to have work I enjoy doing and I have achieved certificates and plaques as awards from what I do. Besides work, my hobbies are equally delightful. I hope to attend college and expand my knowledge of programming to become a future game designer.</p>
             </section>
     
             <section class="home-resume">
-                <h1>Resume</h1>
-                <div class="img"></div>
+                <h1><a href="resume.html">Resume</a></h1>
+                <div class="img">
+                    <span class="button">
+                        <span class="button-label"><a href="resume.html">View More</a></span>
+                    </span>
+                </div>
                 <p>Downloadable PDF document of my resume and letter of recommendation available.</p>
             </section>
         </section>
 
         <section class="home-portfolio">
-            <h1>Portfolio</h1>
+            <h1><a href="portfolio.html">Portfolio</a></h1>
             <p>A mixture of my best programing, writing, and personal projects are shown. Being able to express myself in different forms is what makes projects of any kind incredibly enjoyable.</p>
-            <div id="work-section">
-                <div class="work-grid">
-                    <div class="work-list">
-                        <!-- if possible switch link to page - to link to specific section -->
-                        <div id="bw-work"><a href="/programming.html#battle"><h2>BatteWitch</h2></a></div>
-                        <div id="sw-work"><a href="/programming.html#social"><h2>Social Widget Challenge</h2></a></div>
-                        <div id="bc-work"><a href="/programming.html#budget"><h2>Budget Calculator</h2></a></div>
-                        <div id="ec-work"><a href="/programming.html#energy"><h2>Energy Consumption</h2></a></div>
-                        <div id="cc-work"><a href="/writing.html#career"><h2>Career Choice Essay</h2></a></div>
-                        <div id="tm-work"><a href="/writing.html#machine"><h2>The Machine Stops: Real Estate Description</h2></a></div>
-                        <div id="od-work"><a href="/personalwork.html#wetlands"><h2>Our Disapearing Wetlands</h2></a></div>
+            <section class="pwp-section">
+                <section class="home-programming">
+                    <h1><a href="programming.html">Programming</a></h1>
+                    <div class="img">
+                        <span class="button">
+                            <span class="button-label"><a href="programming.html">View More</a></span>
+                        </span>
                     </div>
-                </div>
-            </div>
+                </section>
+    
+                <section class="home-writing">
+                    <h1><a href="writing.html">Writing</a></h1>
+                    <div class="img">
+                        <span class="button">
+                            <span class="button-label"><a href="writing.html">View More</a></span>
+                        </span>
+                    </div>
+                </section>
+    
+                <section class="home-personal">
+                    <h1><a href="personalwork.html">Personal Work</a></h1>
+                    <div class="img">
+                        <span class="button">
+                            <span class="button-label"><a href="personalwork.html">View More</a></span>
+                        </span>
+                    </div>
+                </section>
+            </section>
         </section>
 
         <section class="home-contact">
             <h1>Thank You!</h1>
-            <p>Contact me here</p>
+            <p><a href="contact.html">Contact me here</a></p>
             <div class="ani-chara"></div>
         </section>
     </main>
 
     <footer>
-        <div></div>
-        <div class="logo"></div>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="programming.html">Programming</a></li>
+                    <li><a href="writing.html">Writing</a></li>
+                    <li><a href="personalwork.html">Personal Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="logo"><img src="images/logo.gif" alt="logo" width="100%"></div>
     </footer>
     <script src="app.js"></script>
 </body>
