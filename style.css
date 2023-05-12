@@ -133,6 +133,14 @@ a:hover {
     margin: 2%;
     background-size: cover;
     background-position: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.greetings .img:hover {
+    background-image: url(images/me-px.png);
+    background-size: cover;
+    background-position: center;
+    transition: background 0.3s ease-in-out;
 }
 
 .greetings p {
@@ -154,7 +162,6 @@ a:hover {
     align-items: center;
     background: #E7C7D7;
     width: 49%;
-    height: 100%;
     border: 2px dashed #7b70708d;
 }
 
@@ -164,14 +171,16 @@ a:hover {
 
 .home-aboutme .img,
 .home-resume .img {
-    background-image: url(images/placeholder.png);
+    background-image: url(images/wave.jpg);
     width: 90%;
     height: 450px;
     margin: 2%;
+    background-size: cover;
+    background-position: center;
 }
 
 .home-resume .img {
-    background-image: url(images/placeholder.png);
+    background-image: url(images/resume.PNG);
 }
 
 .home-aboutme p,
@@ -279,10 +288,12 @@ a:hover {
 }
 
 .achievements .img {
-    background-image: url(images/placeholder.png);
+    background-image: url(images/wave.jpg);
     width: 90%;
     height: 900px;
     margin: 2%;
+    background-size: cover;
+    background-position: center;
 }
 
 .achievements p {
@@ -303,7 +314,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 49%;
-    height: 100%;
     background: #E7C7D7;
     border: 2px dashed #7b70708d;
 }
@@ -627,13 +637,12 @@ li:not(.carousel_slide) {
     justify-content: center;
     align-items: center;
     width: 49%;
-    height: 100%;
     background: #E7C7D7;
     border: 2px dashed #7b70708d;
 }
 
 .SWC {
-    padding-bottom: 2.5%;
+    padding-bottom: 3%;
 }
 
 .SWC .img,
@@ -704,7 +713,6 @@ li:not(.carousel_slide) {
     justify-content: center;
     align-items: center;
     width: 49%;
-    height: 100%;
     background: #B8BF80;
     border: 2px dashed #7b70708d;
 }
@@ -948,7 +956,7 @@ footer section p {
     text-align: right;
 }
 
-nav {
+footer nav {
     display: flex;
     justify-content: space-around;
     margin: 2%;
@@ -956,4 +964,98 @@ nav {
 
 nav p a {
     font-size: 2rem;
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px) and (min-width: 100px) {
+
+    .bb h1,
+    .about h1,
+    .Resume h1,
+    .portfolio h1,
+    .writing h1,
+    .personal-work h1,
+    .contact h1 {
+        font-size: 4rem;
+    }
+
+    .programming h1 {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .greetings {
+        display: block;
+        height: 105vh;
+    }
+
+    .greetings .img {
+        width: 330px;
+        height: 330px;
+    }
+
+    .greetings p {
+        width: 100%;
+        margin: 1%;
+    }
+
+    .about-resume,
+    .pwp-section,
+    .hobbies-plan,
+    .SWC-Budget,
+    .CCE-TMS {
+        display: block;
+    }
+
+    .home-aboutme,
+    .home-resume,
+    .home-programming,
+    .home-writing,
+    .home-personal,
+    .hobbies,
+    .plan,
+    .SWC,
+    .Budget,
+    .CCE,
+    .TMS {
+        width: 100%;
+    }
+
+    .home-resume,
+    .plan,
+    .Budget,
+    .TMS {
+        margin-top: 4%;
+    }
+
+    .home-aboutme .img,
+    .home-resume .img,
+    .home-programming .img,
+    .home-writing .img,
+    .home-personal .img,
+    .achievements .img,
+    .hobbies .img,
+    .plan .img,
+    .BattleWitch .img,
+    .SWC .img,
+    .Budget .img,
+    .Energy .img,
+    .CCE .img,
+    .TMS .img,
+    .ODW .video {
+        height: 30vh;
+    }
+
+    .home-portfolio p {
+        margin: 2%;
+    }
+    
 }
