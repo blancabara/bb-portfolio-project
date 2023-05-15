@@ -265,6 +265,20 @@ a:hover {
     text-align: center;
 }
 
+.contact-img {
+    display: flex;
+    justify-content: center;
+}
+
+.home-chara{
+    background-image: url(images/contact-me1.PNG);
+    height: 75vh;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    margin: 2%;
+}
+
 /* about me page styling */
 .about {
     margin-top: 8%;
@@ -790,7 +804,7 @@ li:not(.carousel_slide) {
 }
 
 /* contact page styling */
-.contact {
+.Contact {
     margin-top: 8%;
     display: flex;
     flex-wrap: wrap;
@@ -798,16 +812,34 @@ li:not(.carousel_slide) {
     width: 70%;
 }
 
-.contact h1 {
+.Contact h1 {
     font-size: 5rem;
     margin: 0%;
     text-align: center;
 }
 
-.contact-content {
+.contact {
     background-color: #B8BF80;
     border: 2px dashed #7b70708d;
     margin-top: 5%;
+}
+
+.contact-content {
+    display: flex;
+}
+
+.contact-list {
+    width: 30%;
+    margin: 2%;
+}
+
+.chara {
+    background-image: url(images/contact-me.png);
+    height: 75vh;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    margin: 2%;
 }
 
 .thanks {
@@ -856,14 +888,6 @@ li:not(.carousel_slide) {
 
 .profile-icon2{
     background-image: url(images/github.png);
-}
-
-.chara {
-    background-image: url(images/contact-me.png);
-    height: 100px;
-    width: 100px;
-    background-size: cover;
-    background-position: center;
 }
 
 /* nav styling section */
@@ -1013,12 +1037,12 @@ nav p a {
     .portfolio h1,
     .writing h1,
     .personal-work h1,
-    .contact h1 {
-        font-size: 4rem;
+    .Contact h1 {
+        font-size: 2rem;
     }
 
     .programming h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     h1 {
@@ -1048,7 +1072,11 @@ nav p a {
     .pwp-section,
     .hobbies-plan,
     .SWC-Budget,
-    .CCE-TMS {
+    .CCE-TMS,
+    .p-programming,
+    .p-writing,
+    .p-pwork, 
+    .contact-content {
         display: block;
     }
 
@@ -1062,8 +1090,19 @@ nav p a {
     .SWC,
     .Budget,
     .CCE,
-    .TMS {
+    .TMS,
+    .home-chara,
+    .contact-list,
+    .chara,
+    .p-programming section,
+    .p-writing section,
+    .p-pwork section {
         width: 100%;
+    }
+
+    .p-pwork .img,
+    .p-writing .img {
+        width: 96%;
     }
 
     .home-resume,
@@ -1087,7 +1126,9 @@ nav p a {
     .Energy .img,
     .CCE .img,
     .TMS .img,
-    .ODW .video {
+    .ODW .video,
+    .p-pwork .img,
+    .p-writing .img {
         height: 30vh;
     }
 
@@ -1097,6 +1138,15 @@ nav p a {
 
     .SWC h1 {
         text-align: center;
+    }
+
+    .chara {
+        margin: 0%;
+    }
+
+    .carousel {
+        width: auto;
+        height: 40vh;
     }
 
     footer section nav {
