@@ -125,7 +125,7 @@ a:hover {
 }
 
 .greetings .img {
-    background-image: url(images/me.jpg);
+    background-image: url(images/Me.jpg);
     width: 450px;
     height: 450px;
     border-radius: 50%;
@@ -136,7 +136,7 @@ a:hover {
 }
 
 .greetings .img:hover {
-    background-image: url(images/me-px.png);
+    background-image: url(images/MePixil.png);
     background-size: cover;
     background-position: center;
     transition: background 0.3s ease-in-out;
